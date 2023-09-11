@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  FetchExercise
+
+  Created by gandhi mena on 8/9/23.
+  
+*/
+
+// Home
+"fetch.v1.home.navTitle" = "Desserts";
+"fetch.v1.home.errorMessage" = "We had an unexpected error, try again later.";
+"fetch.v1.home.refreshButton" = "Refresh";
+
+// DessertDetail
+"fetch.v1.dessertDetail.navTitle" = "Detail";
+"fetch.v1.dessertDetail.instructions" = "Instructions: ";
+"fetch.v1.dessertDetail.ingredients" = "Ingredients: ";

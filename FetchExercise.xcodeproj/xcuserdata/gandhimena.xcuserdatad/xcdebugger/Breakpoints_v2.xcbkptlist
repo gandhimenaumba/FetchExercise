@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "9FBD56C6-E0B0-4FAA-9D00-08158E3D20A7"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0C1AEA1F-BFCD-4BEA-8D06-A59154867BE0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FetchExercise/Modules/DessertDetail/DessertDetailViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "getDessertDetail()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4FC48E91-57A8-4F9E-BF00-733A5C5A9E23"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FetchExercise/Modules/Home/HomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "getDesserts()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4FC48E91-57A8-4F9E-BF00-733A5C5A9E23 - 6a84f557f0dcc85f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FetchExercise.HomeViewModel.getDesserts() -&gt; ()"
+                  moduleName = "FetchExercise"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gandhimena/Documents/Interviews/Pruebas/FETCH/FetchExercise/FetchExercise/Modules/Home/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "4FC48E91-57A8-4F9E-BF00-733A5C5A9E23 - db237a103189f007"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Combine.Subscribers.Completion&lt;FetchExercise.NetworkError&gt;) -&gt; () in FetchExercise.HomeViewModel.getDesserts() -&gt; ()"
+                  moduleName = "FetchExercise"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gandhimena/Documents/Interviews/Pruebas/FETCH/FetchExercise/FetchExercise/Modules/Home/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "104">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
