@@ -7,11 +7,11 @@
 
 import Combine
 
-final class DessertDetailRepository: DessertDetailRepositoryProtocol {
+final class DessertDetailProvider: DessertDetailProviderProtocol {
     
-    let service: DessertService
+    let service: DessertServiceProtocol
     
-    init(service: DessertService) {
+    init(service: DessertServiceProtocol) {
         self.service = service
     }
     

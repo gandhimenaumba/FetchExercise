@@ -33,12 +33,11 @@ struct HomeView: View {
             }
             .navigationTitle(localizer.home(.navTitle))
             .navigationDestination(for: DessertMeailResponse.self) { meail in
-                DessertDetailRouter.createDessertDetailView(id: meail.idMeal)
+                DessertDetailInit.createDessertDetailView(id: meail.idMeal)
             }
             .navigationBarTitleDisplayMode(.large)
             .task {
                 if viewModel.desserts.isEmpty {
-                    viewModel.isLoading = true
                     viewModel.getDesserts()
                 }
             }
@@ -50,6 +49,6 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     
     static var previews: some View {
-        HomeRouter.createHomeView()
+        HomeInit.createHomeView()
     }
 }

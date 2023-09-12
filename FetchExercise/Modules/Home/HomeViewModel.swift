@@ -10,16 +10,14 @@ import SwiftUI
 
 final class HomeViewModel: ObservableObject, HomeViewModelProtocol {
     
-    let repository: HomeRepositoryProtocol
-    let router: HomeRouterProtocol
+    let provider: HomeProviderProtocol
     @Published var desserts: [DessertMeailResponse] = []
     private var subscriptions = Set<AnyCancellable>()
-    @Published var isLoading: Bool = false
+    @Published var isLoading: Bool = true
     @Published var isError: Bool = false
     
-    init(router: HomeRouterProtocol, repository: HomeRepositoryProtocol) {
-        self.repository = repository
-        self.router = router
+    init(provider: HomeProviderProtocol) {
+        self.provider = provider
     }
     
     var dessertsFiltered: [DessertMeailResponse] {
@@ -27,7 +25,7 @@ final class HomeViewModel: ObservableObject, HomeViewModelProtocol {
     }
     
     func getDesserts() {
-         repository.getDesserts().sink(receiveCompletion: { [weak self] completion in
+        provider.getDesserts().sink(receiveCompletion: { [weak self] completion in
             if case let .failure(error) = completion {
                 print(error)
                 self?.isLoading = false

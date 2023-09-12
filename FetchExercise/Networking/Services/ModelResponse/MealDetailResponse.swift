@@ -15,7 +15,7 @@ struct MealsDetailResponse: Decodable {
     }
 }
 
-struct MealDetailResponse: Codable {
+struct MealDetailResponse: Codable, Equatable {
     init(name: String,
          instructions: String,
          ingredient1: String? = nil,

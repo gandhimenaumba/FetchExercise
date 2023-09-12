@@ -16,13 +16,13 @@ struct DessertResponse: Codable {
     }
 }
 
-struct DessertMeailResponse: Codable, Hashable, Identifiable {
+struct DessertMeailResponse: Codable, Hashable, Identifiable, Equatable {
     let id = UUID()
     let name: String
-    let imageString: String?
+    let imageString: String
     let idMeal: String
     
-    init(name: String, imageString: String?, idMeal: String) {
+    init(name: String, imageString: String, idMeal: String) {
         self.name = name
         self.imageString = imageString
         self.idMeal = idMeal

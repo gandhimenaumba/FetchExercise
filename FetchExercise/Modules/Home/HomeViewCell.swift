@@ -14,21 +14,19 @@ struct HomeViewCell: View {
     
     var body: some View {
         HStack() {
-            CacheAsyncImage(url: URL(string: meal.imageString ?? ".")!) { phase in
-                switch phase {
-                case .empty:
-                    ProgressView()
-                case .success(let image):
+            CacheAsyncImage(url: URL(string: meal.imageString)!) { phase in
+                if let image = phase.image {
                     image
                         .resizable()
-                        .frame(maxWidth: 50, maxHeight: 50)
+                        .scaledToFit()
                         .clipShape(RoundedRectangle(cornerRadius: 10))
-                case .failure:
+                } else if phase.error != nil {
                     EmptyView()
-                @unknown default:
-                    fatalError()
+                } else {
+                    ProgressView()
                 }
             }
+            .frame(maxWidth: 50, maxHeight: 50)
             Text(meal.name)
                 .foregroundColor(theme.color.label)
                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -39,6 +37,6 @@ struct HomeViewCell: View {
 struct HomeViewCell_Previews: PreviewProvider {
     
     static var previews: some View {
-        HomeRouter.createHomeView()
+        HomeInit.createHomeView()
     }
 }

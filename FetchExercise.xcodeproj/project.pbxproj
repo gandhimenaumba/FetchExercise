@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD63F5D52AB10FAD006D218E /* DessertDetailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD63F5D42AB10FAD006D218E /* DessertDetailTests.swift */; };
 		FDB16E512AABAC68008B5AA6 /* FetchExerciseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB16E502AABAC68008B5AA6 /* FetchExerciseApp.swift */; };
 		FDB16E552AABAC6A008B5AA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDB16E542AABAC6A008B5AA6 /* Assets.xcassets */; };
 		FDB16E592AABAC6A008B5AA6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDB16E582AABAC6A008B5AA6 /* Preview Assets.xcassets */; };
-		FDB16E632AABAC6A008B5AA6 /* FetchExerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB16E622AABAC6A008B5AA6 /* FetchExerciseTests.swift */; };
 		FDB16E6D2AABAC6A008B5AA6 /* FetchExerciseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB16E6C2AABAC6A008B5AA6 /* FetchExerciseUITests.swift */; };
 		FDB16E6F2AABAC6A008B5AA6 /* FetchExerciseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB16E6E2AABAC6A008B5AA6 /* FetchExerciseUITestsLaunchTests.swift */; };
 		FDB16E802AABAD7F008B5AA6 /* NetworkCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB16E7F2AABAD7F008B5AA6 /* NetworkCore.swift */; };
@@ -33,17 +33,16 @@
 		FDB16EA92AABB3DA008B5AA6 /* Collection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB16EA82AABB3DA008B5AA6 /* Collection+Extension.swift */; };
 		FDB16EAD2AABB477008B5AA6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB16EAC2AABB477008B5AA6 /* HomeView.swift */; };
 		FDB16EAF2AABB47E008B5AA6 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB16EAE2AABB47E008B5AA6 /* HomeViewModel.swift */; };
-		FDB16EB12AABB48E008B5AA6 /* HomeDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB16EB02AABB48E008B5AA6 /* HomeDependencies.swift */; };
+		FDB16EB12AABB48E008B5AA6 /* HomeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB16EB02AABB48E008B5AA6 /* HomeProvider.swift */; };
 		FDB16EB32AABB4B7008B5AA6 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB16EB22AABB4B7008B5AA6 /* HomeProtocols.swift */; };
-		FDB16EB52AABB527008B5AA6 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB16EB42AABB527008B5AA6 /* HomeRouter.swift */; };
+		FDB16EB52AABB527008B5AA6 /* HomeInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB16EB42AABB527008B5AA6 /* HomeInit.swift */; };
 		FDB16EB82AABB6A5008B5AA6 /* DessertResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB16EB72AABB6A5008B5AA6 /* DessertResponse.swift */; };
 		FDB16EBF2AABB972008B5AA6 /* NetworkValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB16EBE2AABB972008B5AA6 /* NetworkValidator.swift */; };
 		FDB16EC12AABB98B008B5AA6 /* NetworkErrorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB16EC02AABB98B008B5AA6 /* NetworkErrorData.swift */; };
 		FDB16EC42AABC7F5008B5AA6 /* DessertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB16EC32AABC7F5008B5AA6 /* DessertService.swift */; };
-		FDB16EC62AABDA5E008B5AA6 /* NavigationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB16EC52AABDA5E008B5AA6 /* NavigationState.swift */; };
 		FDB16EC82AABDBDD008B5AA6 /* DessertDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB16EC72AABDBDD008B5AA6 /* DessertDetailView.swift */; };
 		FDB16ECA2AABE09F008B5AA6 /* DessertDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB16EC92AABE09F008B5AA6 /* DessertDetailViewModel.swift */; };
-		FDB16ECC2AABE136008B5AA6 /* DessertDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB16ECB2AABE136008B5AA6 /* DessertDetailRouter.swift */; };
+		FDB16ECC2AABE136008B5AA6 /* DessertDetailInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB16ECB2AABE136008B5AA6 /* DessertDetailInit.swift */; };
 		FDB16ECE2AABE154008B5AA6 /* DessertDetailDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB16ECD2AABE154008B5AA6 /* DessertDetailDependencies.swift */; };
 		FDB16ED02AABE465008B5AA6 /* AppVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB16ECF2AABE465008B5AA6 /* AppVersion.swift */; };
 		FDB16ED32AABE5CA008B5AA6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FDB16ED52AABE5CA008B5AA6 /* Localizable.strings */; };
@@ -56,6 +55,8 @@
 		FDB16EEB2AAFA670008B5AA6 /* HomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB16EEA2AAFA670008B5AA6 /* HomeViewCell.swift */; };
 		FDBEA8F82AAFC77600F3ECEB /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBEA8F72AAFC77600F3ECEB /* UIImageView+Extension.swift */; };
 		FDBEA8FA2AAFCD6700F3ECEB /* CacheAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBEA8F92AAFCD6700F3ECEB /* CacheAsyncImage.swift */; };
+		FDBEA8FC2AB0E8EC00F3ECEB /* DessertServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBEA8FB2AB0E8EC00F3ECEB /* DessertServiceMock.swift */; };
+		FDBEA8FE2AB0F1AA00F3ECEB /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBEA8FD2AB0F1AA00F3ECEB /* HomeViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,13 +77,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FD63F5D42AB10FAD006D218E /* DessertDetailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertDetailTests.swift; sourceTree = "<group>"; };
 		FDB16E4D2AABAC68008B5AA6 /* FetchExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDB16E502AABAC68008B5AA6 /* FetchExerciseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchExerciseApp.swift; sourceTree = "<group>"; };
 		FDB16E542AABAC6A008B5AA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDB16E562AABAC6A008B5AA6 /* FetchExercise.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FetchExercise.entitlements; sourceTree = "<group>"; };
 		FDB16E582AABAC6A008B5AA6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FDB16E5E2AABAC6A008B5AA6 /* FetchExerciseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchExerciseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FDB16E622AABAC6A008B5AA6 /* FetchExerciseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchExerciseTests.swift; sourceTree = "<group>"; };
 		FDB16E682AABAC6A008B5AA6 /* FetchExerciseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchExerciseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDB16E6C2AABAC6A008B5AA6 /* FetchExerciseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchExerciseUITests.swift; sourceTree = "<group>"; };
 		FDB16E6E2AABAC6A008B5AA6 /* FetchExerciseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchExerciseUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -106,17 +107,16 @@
 		FDB16EA82AABB3DA008B5AA6 /* Collection+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extension.swift"; sourceTree = "<group>"; };
 		FDB16EAC2AABB477008B5AA6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		FDB16EAE2AABB47E008B5AA6 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		FDB16EB02AABB48E008B5AA6 /* HomeDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDependencies.swift; sourceTree = "<group>"; };
+		FDB16EB02AABB48E008B5AA6 /* HomeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProvider.swift; sourceTree = "<group>"; };
 		FDB16EB22AABB4B7008B5AA6 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
-		FDB16EB42AABB527008B5AA6 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		FDB16EB42AABB527008B5AA6 /* HomeInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInit.swift; sourceTree = "<group>"; };
 		FDB16EB72AABB6A5008B5AA6 /* DessertResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertResponse.swift; sourceTree = "<group>"; };
 		FDB16EBE2AABB972008B5AA6 /* NetworkValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkValidator.swift; sourceTree = "<group>"; };
 		FDB16EC02AABB98B008B5AA6 /* NetworkErrorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorData.swift; sourceTree = "<group>"; };
 		FDB16EC32AABC7F5008B5AA6 /* DessertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertService.swift; sourceTree = "<group>"; };
-		FDB16EC52AABDA5E008B5AA6 /* NavigationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationState.swift; sourceTree = "<group>"; };
 		FDB16EC72AABDBDD008B5AA6 /* DessertDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertDetailView.swift; sourceTree = "<group>"; };
 		FDB16EC92AABE09F008B5AA6 /* DessertDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertDetailViewModel.swift; sourceTree = "<group>"; };
-		FDB16ECB2AABE136008B5AA6 /* DessertDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertDetailRouter.swift; sourceTree = "<group>"; };
+		FDB16ECB2AABE136008B5AA6 /* DessertDetailInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertDetailInit.swift; sourceTree = "<group>"; };
 		FDB16ECD2AABE154008B5AA6 /* DessertDetailDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertDetailDependencies.swift; sourceTree = "<group>"; };
 		FDB16ECF2AABE465008B5AA6 /* AppVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppVersion.swift; sourceTree = "<group>"; };
 		FDB16ED42AABE5CA008B5AA6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -129,6 +129,8 @@
 		FDB16EEA2AAFA670008B5AA6 /* HomeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewCell.swift; sourceTree = "<group>"; };
 		FDBEA8F72AAFC77600F3ECEB /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		FDBEA8F92AAFCD6700F3ECEB /* CacheAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheAsyncImage.swift; sourceTree = "<group>"; };
+		FDBEA8FB2AB0E8EC00F3ECEB /* DessertServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertServiceMock.swift; sourceTree = "<group>"; };
+		FDBEA8FD2AB0F1AA00F3ECEB /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,7 +188,6 @@
 				FDB16E7B2AABACAA008B5AA6 /* Networking */,
 				FDB16E7E2AABACD5008B5AA6 /* Modules */,
 				FDB16E502AABAC68008B5AA6 /* FetchExerciseApp.swift */,
-				FDB16EC52AABDA5E008B5AA6 /* NavigationState.swift */,
 				FDB16E562AABAC6A008B5AA6 /* FetchExercise.entitlements */,
 				FDB16E572AABAC6A008B5AA6 /* Preview Content */,
 			);
@@ -204,7 +205,8 @@
 		FDB16E612AABAC6A008B5AA6 /* FetchExerciseTests */ = {
 			isa = PBXGroup;
 			children = (
-				FDB16E622AABAC6A008B5AA6 /* FetchExerciseTests.swift */,
+				FDBEA8FD2AB0F1AA00F3ECEB /* HomeViewModelTests.swift */,
+				FD63F5D42AB10FAD006D218E /* DessertDetailTests.swift */,
 			);
 			path = FetchExerciseTests;
 			sourceTree = "<group>";
@@ -310,8 +312,8 @@
 			isa = PBXGroup;
 			children = (
 				FDB16EB22AABB4B7008B5AA6 /* HomeProtocols.swift */,
-				FDB16EB02AABB48E008B5AA6 /* HomeDependencies.swift */,
-				FDB16EB42AABB527008B5AA6 /* HomeRouter.swift */,
+				FDB16EB02AABB48E008B5AA6 /* HomeProvider.swift */,
+				FDB16EB42AABB527008B5AA6 /* HomeInit.swift */,
 				FDB16EAE2AABB47E008B5AA6 /* HomeViewModel.swift */,
 				FDB16EAC2AABB477008B5AA6 /* HomeView.swift */,
 				FDB16EEA2AAFA670008B5AA6 /* HomeViewCell.swift */,
@@ -324,7 +326,7 @@
 			children = (
 				FDB16ED62AABE71B008B5AA6 /* DessertDetailProtocols.swift */,
 				FDB16ECD2AABE154008B5AA6 /* DessertDetailDependencies.swift */,
-				FDB16ECB2AABE136008B5AA6 /* DessertDetailRouter.swift */,
+				FDB16ECB2AABE136008B5AA6 /* DessertDetailInit.swift */,
 				FDB16EC92AABE09F008B5AA6 /* DessertDetailViewModel.swift */,
 				FDB16EE02AACFF6A008B5AA6 /* DessertDetailLogic.swift */,
 				FDB16EC72AABDBDD008B5AA6 /* DessertDetailView.swift */,
@@ -347,6 +349,7 @@
 			children = (
 				FDB16EB62AABB67B008B5AA6 /* ModelResponse */,
 				FDB16EC32AABC7F5008B5AA6 /* DessertService.swift */,
+				FDBEA8FB2AB0E8EC00F3ECEB /* DessertServiceMock.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -496,11 +499,11 @@
 			files = (
 				FDB16E952AABB175008B5AA6 /* Image+Extension.swift in Sources */,
 				FDB16E8E2AABB099008B5AA6 /* GenericValidators.swift in Sources */,
-				FDB16EB52AABB527008B5AA6 /* HomeRouter.swift in Sources */,
+				FDB16EB52AABB527008B5AA6 /* HomeInit.swift in Sources */,
 				FDB16E9E2AABB296008B5AA6 /* AppTheme+Color.swift in Sources */,
 				FDB16EC82AABDBDD008B5AA6 /* DessertDetailView.swift in Sources */,
 				FDB16E802AABAD7F008B5AA6 /* NetworkCore.swift in Sources */,
-				FDB16ECC2AABE136008B5AA6 /* DessertDetailRouter.swift in Sources */,
+				FDB16ECC2AABE136008B5AA6 /* DessertDetailInit.swift in Sources */,
 				FDB16EAD2AABB477008B5AA6 /* HomeView.swift in Sources */,
 				FDB16ED92AABE853008B5AA6 /* MealDetailResponse.swift in Sources */,
 				FDB16EA72AABB34E008B5AA6 /* AppLocalizer+DessertDetail.swift in Sources */,
@@ -522,15 +525,15 @@
 				FDB16EEB2AAFA670008B5AA6 /* HomeViewCell.swift in Sources */,
 				FDB16ECE2AABE154008B5AA6 /* DessertDetailDependencies.swift in Sources */,
 				FDB16EB32AABB4B7008B5AA6 /* HomeProtocols.swift in Sources */,
+				FDBEA8FC2AB0E8EC00F3ECEB /* DessertServiceMock.swift in Sources */,
 				FDB16E862AABAE2D008B5AA6 /* Endpoints.swift in Sources */,
-				FDB16EC62AABDA5E008B5AA6 /* NavigationState.swift in Sources */,
 				FDB16E8B2AABAFEF008B5AA6 /* Endpoints+Dessert.swift in Sources */,
 				FDB16E932AABB153008B5AA6 /* Data+Extension.swift in Sources */,
 				FDB16EA02AABB2A8008B5AA6 /* AppTheme.swift in Sources */,
 				FDBEA8F82AAFC77600F3ECEB /* UIImageView+Extension.swift in Sources */,
 				FDB16ED02AABE465008B5AA6 /* AppVersion.swift in Sources */,
 				FDB16E842AABAE06008B5AA6 /* NetworkError.swift in Sources */,
-				FDB16EB12AABB48E008B5AA6 /* HomeDependencies.swift in Sources */,
+				FDB16EB12AABB48E008B5AA6 /* HomeProvider.swift in Sources */,
 				FDB16EB82AABB6A5008B5AA6 /* DessertResponse.swift in Sources */,
 				FDB16EBF2AABB972008B5AA6 /* NetworkValidator.swift in Sources */,
 				FDB16EE62AAF95F8008B5AA6 /* DessertDetailDescriptionView.swift in Sources */,
@@ -544,7 +547,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDB16E632AABAC6A008B5AA6 /* FetchExerciseTests.swift in Sources */,
+				FDBEA8FE2AB0F1AA00F3ECEB /* HomeViewModelTests.swift in Sources */,
+				FD63F5D52AB10FAD006D218E /* DessertDetailTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,8 +10,7 @@ import Combine
 
 final class DessertDetailViewModel: ObservableObject {
     
-    private let repository: DessertDetailRepositoryProtocol
-    private let router: DessertDetailRouterProtocol
+    private let provider: DessertDetailProviderProtocol
     private var mealId: String
     private var subscriptions = Set<AnyCancellable>()
     private let logic: DessertDetailLogic
@@ -31,15 +30,14 @@ final class DessertDetailViewModel: ObservableObject {
         mealDetail?.instructions ?? ""
     }
     
-    init(router: DessertDetailRouterProtocol, repository: DessertDetailRepositoryProtocol, logic: DessertDetailLogic, mealId: String) {
-        self.repository = repository
-        self.router = router
+    init(provider: DessertDetailProviderProtocol, logic: DessertDetailLogic, mealId: String) {
+        self.provider = provider
         self.logic = logic
         self.mealId = mealId
     }
     
-    func getDessertDetail() async {
-        await repository.getDessertDetail(id: mealId).sink(receiveCompletion: { [weak self] completion in
+    func getDessertDetail() {
+        provider.getDessertDetail(id: mealId).sink(receiveCompletion: { [weak self] completion in
             if case let .failure(error) = completion {
                 print(error)
                 self?.isLoading = false

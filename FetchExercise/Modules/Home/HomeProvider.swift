@@ -1,5 +1,5 @@
 //
-//  HomeDependencies.swift
+//  HomeProvider.swift
 //  FetchExercise
 //
 //  Created by gandhi mena on 8/9/23.
@@ -7,11 +7,11 @@
 
 import Combine
 
-final class HomeRepository: HomeRepositoryProtocol {
+final class HomeProvider: HomeProviderProtocol {
     
-    let service: DessertService
+    let service: DessertServiceProtocol
     
-    init(service: DessertService) {
+    init(service: DessertServiceProtocol) {
         self.service = service
     }
     

@@ -7,11 +7,7 @@
 
 import Combine
 
-protocol HomeRouterProtocol {
-    
-}
-
-protocol HomeRepositoryProtocol: AnyObject {
+protocol HomeProviderProtocol: AnyObject {
     func getDesserts() -> AnyPublisher<DessertResponse, NetworkError>
 }
 

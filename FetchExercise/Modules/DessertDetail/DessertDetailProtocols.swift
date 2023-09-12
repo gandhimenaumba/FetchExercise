@@ -7,10 +7,6 @@
 
 import Combine
 
-protocol DessertDetailRouterProtocol: AnyObject {
-    
-}
-
-protocol DessertDetailRepositoryProtocol: AnyObject {
+protocol DessertDetailProviderProtocol: AnyObject {
     func getDessertDetail(id: String) -> AnyPublisher<MealsDetailResponse, NetworkError>
 }

@@ -8,7 +8,8 @@
 import Combine
 
 protocol DessertServiceProtocol: AnyObject {
-    func getDesserts() async -> AnyPublisher<DessertResponse, NetworkError>
+    func getDesserts() -> AnyPublisher<DessertResponse, NetworkError>
+    func getDessertDetail(id: String) -> AnyPublisher<MealsDetailResponse, NetworkError>
 }
 
 final class DessertService: DessertServiceProtocol {

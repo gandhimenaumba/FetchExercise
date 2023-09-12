@@ -41,13 +41,13 @@ struct DessertDetailView: View {
         .navigationTitle(localizer.DessertDetail(.navTitle))
         .navigationBarTitleDisplayMode(.inline)
         .task {
-            await viewModel.getDessertDetail()
+            viewModel.getDessertDetail()
         }
     }
 }
 
 struct DessertDetail_Previews: PreviewProvider {
     static var previews: some View {
-        DessertDetailRouter.createDessertDetailView(id: "53049")
+        DessertDetailInit.createDessertDetailView(id: "53049")
     }
 }
