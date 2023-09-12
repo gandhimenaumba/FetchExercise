@@ -38,8 +38,8 @@ final class DessertDetailViewModel: ObservableObject {
         self.mealId = mealId
     }
     
-    func getDessertDetail() {
-        repository.getDessertDetail(id: mealId).sink(receiveCompletion: { [weak self] completion in
+    func getDessertDetail() async {
+        await repository.getDessertDetail(id: mealId).sink(receiveCompletion: { [weak self] completion in
             if case let .failure(error) = completion {
                 print(error)
                 self?.isLoading = false

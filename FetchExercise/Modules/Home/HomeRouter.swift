@@ -10,7 +10,8 @@ import Foundation
 final class HomeRouter: HomeRouterProtocol {
     static func createHomeView() -> HomeView {
         let router = HomeRouter()
-        let repository = HomeRepository()
+        let service = DessertService()
+        let repository = HomeRepository(service: service)
         let viewModel = HomeViewModel(router: router, repository: repository)
         return HomeView(viewModel: viewModel)
     }

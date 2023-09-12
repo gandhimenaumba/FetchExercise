@@ -37,8 +37,6 @@
 		FDB16EB32AABB4B7008B5AA6 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB16EB22AABB4B7008B5AA6 /* HomeProtocols.swift */; };
 		FDB16EB52AABB527008B5AA6 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB16EB42AABB527008B5AA6 /* HomeRouter.swift */; };
 		FDB16EB82AABB6A5008B5AA6 /* DessertResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB16EB72AABB6A5008B5AA6 /* DessertResponse.swift */; };
-		FDB16EBB2AABB85F008B5AA6 /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = FDB16EBA2AABB85F008B5AA6 /* Dependencies */; };
-		FDB16EBD2AABB92B008B5AA6 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB16EBC2AABB92B008B5AA6 /* AppDependencies.swift */; };
 		FDB16EBF2AABB972008B5AA6 /* NetworkValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB16EBE2AABB972008B5AA6 /* NetworkValidator.swift */; };
 		FDB16EC12AABB98B008B5AA6 /* NetworkErrorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB16EC02AABB98B008B5AA6 /* NetworkErrorData.swift */; };
 		FDB16EC42AABC7F5008B5AA6 /* DessertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB16EC32AABC7F5008B5AA6 /* DessertService.swift */; };
@@ -53,10 +51,11 @@
 		FDB16ED92AABE853008B5AA6 /* MealDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB16ED82AABE853008B5AA6 /* MealDetailResponse.swift */; };
 		FDB16EDF2AAC348F008B5AA6 /* Encodable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB16EDE2AAC348F008B5AA6 /* Encodable+Extension.swift */; };
 		FDB16EE12AACFF6A008B5AA6 /* DessertDetailLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB16EE02AACFF6A008B5AA6 /* DessertDetailLogic.swift */; };
-		FDB16EE42AAD10C2008B5AA6 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FDB16EE32AAD10C2008B5AA6 /* Kingfisher */; };
 		FDB16EE62AAF95F8008B5AA6 /* DessertDetailDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB16EE52AAF95F8008B5AA6 /* DessertDetailDescriptionView.swift */; };
 		FDB16EE92AAFA651008B5AA6 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB16EE82AAFA651008B5AA6 /* ErrorView.swift */; };
 		FDB16EEB2AAFA670008B5AA6 /* HomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB16EEA2AAFA670008B5AA6 /* HomeViewCell.swift */; };
+		FDBEA8F82AAFC77600F3ECEB /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBEA8F72AAFC77600F3ECEB /* UIImageView+Extension.swift */; };
+		FDBEA8FA2AAFCD6700F3ECEB /* CacheAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBEA8F92AAFCD6700F3ECEB /* CacheAsyncImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,7 +110,6 @@
 		FDB16EB22AABB4B7008B5AA6 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
 		FDB16EB42AABB527008B5AA6 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		FDB16EB72AABB6A5008B5AA6 /* DessertResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertResponse.swift; sourceTree = "<group>"; };
-		FDB16EBC2AABB92B008B5AA6 /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
 		FDB16EBE2AABB972008B5AA6 /* NetworkValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkValidator.swift; sourceTree = "<group>"; };
 		FDB16EC02AABB98B008B5AA6 /* NetworkErrorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorData.swift; sourceTree = "<group>"; };
 		FDB16EC32AABC7F5008B5AA6 /* DessertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertService.swift; sourceTree = "<group>"; };
@@ -129,6 +127,8 @@
 		FDB16EE52AAF95F8008B5AA6 /* DessertDetailDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertDetailDescriptionView.swift; sourceTree = "<group>"; };
 		FDB16EE82AAFA651008B5AA6 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		FDB16EEA2AAFA670008B5AA6 /* HomeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewCell.swift; sourceTree = "<group>"; };
+		FDBEA8F72AAFC77600F3ECEB /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		FDBEA8F92AAFCD6700F3ECEB /* CacheAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheAsyncImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,8 +136,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDB16EE42AAD10C2008B5AA6 /* Kingfisher in Frameworks */,
-				FDB16EBB2AABB85F008B5AA6 /* Dependencies in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +263,7 @@
 			children = (
 				FDB16E8D2AABB099008B5AA6 /* GenericValidators.swift */,
 				FDB16E8F2AABB0AC008B5AA6 /* GenericOperators.swift */,
-				FDB16EBC2AABB92B008B5AA6 /* AppDependencies.swift */,
+				FDBEA8F92AAFCD6700F3ECEB /* CacheAsyncImage.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -278,6 +276,7 @@
 				FDB16E962AABB1A0008B5AA6 /* HTTPURLResponse+Extension.swift */,
 				FDB16EA82AABB3DA008B5AA6 /* Collection+Extension.swift */,
 				FDB16EDE2AAC348F008B5AA6 /* Encodable+Extension.swift */,
+				FDBEA8F72AAFC77600F3ECEB /* UIImageView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -377,8 +376,6 @@
 			);
 			name = FetchExercise;
 			packageProductDependencies = (
-				FDB16EBA2AABB85F008B5AA6 /* Dependencies */,
-				FDB16EE32AAD10C2008B5AA6 /* Kingfisher */,
 			);
 			productName = FetchExercise;
 			productReference = FDB16E4D2AABAC68008B5AA6 /* FetchExercise.app */;
@@ -453,8 +450,6 @@
 			);
 			mainGroup = FDB16E442AABAC68008B5AA6;
 			packageReferences = (
-				FDB16EB92AABB85F008B5AA6 /* XCRemoteSwiftPackageReference "swift-dependencies" */,
-				FDB16EE22AAD10C2008B5AA6 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = FDB16E4E2AABAC68008B5AA6 /* Products */;
 			projectDirPath = "";
@@ -505,7 +500,6 @@
 				FDB16E9E2AABB296008B5AA6 /* AppTheme+Color.swift in Sources */,
 				FDB16EC82AABDBDD008B5AA6 /* DessertDetailView.swift in Sources */,
 				FDB16E802AABAD7F008B5AA6 /* NetworkCore.swift in Sources */,
-				FDB16EBD2AABB92B008B5AA6 /* AppDependencies.swift in Sources */,
 				FDB16ECC2AABE136008B5AA6 /* DessertDetailRouter.swift in Sources */,
 				FDB16EAD2AABB477008B5AA6 /* HomeView.swift in Sources */,
 				FDB16ED92AABE853008B5AA6 /* MealDetailResponse.swift in Sources */,
@@ -516,6 +510,7 @@
 				FDB16EA92AABB3DA008B5AA6 /* Collection+Extension.swift in Sources */,
 				FDB16EA32AABB2F8008B5AA6 /* AppLocalizer.swift in Sources */,
 				FDB16EC12AABB98B008B5AA6 /* NetworkErrorData.swift in Sources */,
+				FDBEA8FA2AAFCD6700F3ECEB /* CacheAsyncImage.swift in Sources */,
 				FDB16EDF2AAC348F008B5AA6 /* Encodable+Extension.swift in Sources */,
 				FDB16E512AABAC68008B5AA6 /* FetchExerciseApp.swift in Sources */,
 				FDB16ED72AABE71B008B5AA6 /* DessertDetailProtocols.swift in Sources */,
@@ -532,6 +527,7 @@
 				FDB16E8B2AABAFEF008B5AA6 /* Endpoints+Dessert.swift in Sources */,
 				FDB16E932AABB153008B5AA6 /* Data+Extension.swift in Sources */,
 				FDB16EA02AABB2A8008B5AA6 /* AppTheme.swift in Sources */,
+				FDBEA8F82AAFC77600F3ECEB /* UIImageView+Extension.swift in Sources */,
 				FDB16ED02AABE465008B5AA6 /* AppVersion.swift in Sources */,
 				FDB16E842AABAE06008B5AA6 /* NetworkError.swift in Sources */,
 				FDB16EB12AABB48E008B5AA6 /* HomeDependencies.swift in Sources */,
@@ -903,38 +899,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		FDB16EB92AABB85F008B5AA6 /* XCRemoteSwiftPackageReference "swift-dependencies" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/pointfreeco/swift-dependencies";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-		FDB16EE22AAD10C2008B5AA6 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/onevcat/Kingfisher";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 7.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		FDB16EBA2AABB85F008B5AA6 /* Dependencies */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FDB16EB92AABB85F008B5AA6 /* XCRemoteSwiftPackageReference "swift-dependencies" */;
-			productName = Dependencies;
-		};
-		FDB16EE32AAD10C2008B5AA6 /* Kingfisher */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FDB16EE22AAD10C2008B5AA6 /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FDB16E452AABAC68008B5AA6 /* Project object */;
 }

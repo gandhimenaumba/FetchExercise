@@ -6,13 +6,16 @@
 //
 
 import Combine
-import Dependencies
 
 final class HomeRepository: HomeRepositoryProtocol {
     
-    @Dependency(\.userService) var userService
+    let service: DessertService
+    
+    init(service: DessertService) {
+        self.service = service
+    }
     
     func getDesserts() -> AnyPublisher<DessertResponse, NetworkError> {
-        userService.getDesserts()
+        service.getDesserts()
     }
 }

@@ -17,8 +17,6 @@ struct DessertDetailView: View {
         ScrollView {
             if viewModel.isLoading {
                 ProgressView()
-            } else if viewModel.isError {
-                ErrorView(title: localizer.home(.errorMessage), action: viewModel.getDessertDetail)
             } else {
                 VStack {
                     Text(viewModel.mealName)
@@ -42,8 +40,8 @@ struct DessertDetailView: View {
         }
         .navigationTitle(localizer.DessertDetail(.navTitle))
         .navigationBarTitleDisplayMode(.inline)
-        .onAppear {
-            viewModel.getDessertDetail()
+        .task {
+            await viewModel.getDessertDetail()
         }
     }
 }

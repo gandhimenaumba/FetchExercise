@@ -11,32 +11,39 @@ import SwiftUI
 struct HomeView: View {
     
     @StateObject var viewModel: HomeViewModel
-    @EnvironmentObject private var navigationState: NavigationState
     private let localizer: AppLocalizer = AppVersion.localizer
     
     var body: some View {
-        VStack {
-            if viewModel.isLoading {
-                ProgressView()
-            } else if viewModel.isError {
-                ErrorView(title: localizer.home(.errorMessage), action: viewModel.getDesserts)
-            } else {
-                List(viewModel.dessertsFiltered, id: \.idMeal.self) { meal in
-                    HomeViewCell(meal: meal)
-                        .onTapGesture {
-                            navigationState.routes.append(.dessertDetail(meal.idMeal))
+        NavigationStack {
+            VStack {
+                if viewModel.isLoading {
+                    ProgressView()
+                } else {
+                    List {
+                        ForEach(viewModel.dessertsFiltered) { meal in
+                            NavigationLink(value: meal) {
+                                HomeViewCell(meal: meal)
+                            }
                         }
+                    }
+                    .refreshable {
+                        viewModel.getDesserts()
+                    }
+                }
+            }
+            .navigationTitle(localizer.home(.navTitle))
+            .navigationDestination(for: DessertMeailResponse.self) { meail in
+                DessertDetailRouter.createDessertDetailView(id: meail.idMeal)
+            }
+            .navigationBarTitleDisplayMode(.large)
+            .task {
+                if viewModel.desserts.isEmpty {
+                    viewModel.isLoading = true
+                    viewModel.getDesserts()
                 }
             }
         }
-        .navigationTitle(localizer.home(.navTitle))
-        .navigationBarTitleDisplayMode(.large)
-        .onAppear {
-            if viewModel.desserts.isEmpty {
-                viewModel.isLoading = true
-                viewModel.getDesserts()
-            }
-        }
+
     }
 }
 

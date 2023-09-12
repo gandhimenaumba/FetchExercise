@@ -5,10 +5,10 @@
 //  Created by gandhi mena on 8/9/23.
 //
 
-import Foundation
+import SwiftUI
 
 final class NavigationState: ObservableObject {
-    @Published var routes: [AppRoute] = []
+    @State var routes: [AppRoute] = []
     
 }
 

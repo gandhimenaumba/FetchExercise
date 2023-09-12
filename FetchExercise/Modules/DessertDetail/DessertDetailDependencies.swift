@@ -5,14 +5,18 @@
 //  Created by gandhi mena on 8/9/23.
 //
 
-import Dependencies
 import Combine
 
 final class DessertDetailRepository: DessertDetailRepositoryProtocol {
-    @Dependency(\.userService) var userService
+    
+    let service: DessertService
+    
+    init(service: DessertService) {
+        self.service = service
+    }
     
     func getDessertDetail(id: String) -> AnyPublisher<MealsDetailResponse, NetworkError> {
-        userService.getDessertDetail(id: id)
+        service.getDessertDetail(id: id)
     }
 }
 

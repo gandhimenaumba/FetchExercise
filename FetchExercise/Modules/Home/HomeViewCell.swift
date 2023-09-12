@@ -5,7 +5,6 @@
 //  Created by gandhi mena on 11/9/23.
 //
 
-import Kingfisher
 import SwiftUI
 
 struct HomeViewCell: View {
@@ -15,15 +14,24 @@ struct HomeViewCell: View {
     
     var body: some View {
         HStack() {
-            KFImage(URL(string: meal.imageString ?? "."))
-                .resizable()
-                .frame(maxWidth: 50, maxHeight: 50)
-                .clipShape(RoundedRectangle(cornerRadius: 10))
+            CacheAsyncImage(url: URL(string: meal.imageString ?? ".")!) { phase in
+                switch phase {
+                case .empty:
+                    ProgressView()
+                case .success(let image):
+                    image
+                        .resizable()
+                        .frame(maxWidth: 50, maxHeight: 50)
+                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                case .failure:
+                    EmptyView()
+                @unknown default:
+                    fatalError()
+                }
+            }
             Text(meal.name)
                 .foregroundColor(theme.color.label)
                 .frame(maxWidth: .infinity, alignment: .leading)
-            Text(Image(.chevronRight))
-                .foregroundStyle(.gray)
         }
     }
 }

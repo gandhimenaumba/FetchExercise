@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DessertResponse: Decodable {
+struct DessertResponse: Codable {
     
     let meals: [DessertMeailResponse]
     
@@ -16,7 +16,8 @@ struct DessertResponse: Decodable {
     }
 }
 
-struct DessertMeailResponse: Codable, Equatable, Hashable {
+struct DessertMeailResponse: Codable, Hashable, Identifiable {
+    let id = UUID()
     let name: String
     let imageString: String?
     let idMeal: String

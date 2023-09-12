@@ -27,7 +27,7 @@ final class HomeViewModel: ObservableObject, HomeViewModelProtocol {
     }
     
     func getDesserts() {
-        repository.getDesserts().sink(receiveCompletion: { [weak self] completion in
+         repository.getDesserts().sink(receiveCompletion: { [weak self] completion in
             if case let .failure(error) = completion {
                 print(error)
                 self?.isLoading = false

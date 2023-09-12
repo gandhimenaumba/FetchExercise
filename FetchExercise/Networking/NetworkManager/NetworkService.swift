@@ -6,12 +6,11 @@
 //
 
 import Combine
-import Dependencies
+//import Dependencies
 import Foundation
 
 protocol NetworkServiceProtocol: AnyObject {
     func request<T>(_ endpoint: Endpoints) -> AnyPublisher<T, NetworkError> where T: Decodable
-    func download(_ endpoint: Endpoints) -> AnyPublisher<Data, NetworkError>
 }
 
 final class NetworkService: NetworkServiceProtocol {
@@ -19,19 +18,6 @@ final class NetworkService: NetworkServiceProtocol {
     func request<T>(_ endpoint: Endpoints) -> AnyPublisher<T, NetworkError> where T : Decodable {
         getURLRequest(endpoint: endpoint)
         |> urlSessionRequest
-    }
-    
-    func download(_ endpoint: Endpoints) -> AnyPublisher<Data, NetworkError> {
-        getURLRequest(endpoint: endpoint)
-        |> urlSessionDownloadRequest
-    }
-    
-    private func urlSessionDownloadRequest(_ urlRequest: URLRequest) -> AnyPublisher<Data, NetworkError> {
-        URLSession.shared.dataTaskPublisher(for: urlRequest)
-            .map(\.data)
-            .mapError(handleError)
-            .receive(on: RunLoop.main)
-            .eraseToAnyPublisher()
     }
     
     private func urlSessionRequest<T: Decodable>(_ urlRequest: URLRequest) -> AnyPublisher<T, NetworkError> {
@@ -109,7 +95,7 @@ final class NetworkService: NetworkServiceProtocol {
         return error
     }
     
-    private func getURLRequest(endpoint: Endpoints) ->URLRequest {
+    private func getURLRequest(endpoint: Endpoints) -> URLRequest {
         let url = URL(string: endpoint.getService.baseURL) ?? URL(string: "urlFial")!
         var urlComponent = URLComponents(url: url, resolvingAgainstBaseURL: true) ?? URLComponents()
         urlComponent.queryItems = endpoint.getService.queryItems
@@ -127,8 +113,4 @@ final class NetworkService: NetworkServiceProtocol {
         return errors
     }
     
-}
-
-extension NetworkService: DependencyKey {
-    static let liveValue = NetworkService()
 }
